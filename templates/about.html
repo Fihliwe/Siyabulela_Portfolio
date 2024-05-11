@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fihliwe Tech</title>
+    {% if title %}
+        <title>Fihliwe Tech - {{ title }}</title>
+    {% else %}
+        <title>Fihliwe Tech</title>
+    {% endif %}  
 </head>
 <body>
     
